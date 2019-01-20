@@ -35,3 +35,5 @@ vagrant@ubuntu-xenial:/tmp$ tail -f testapp.log
 02:49:31.257 INFO [spatcher-3] k.t.Main$ Loaded data into Redis
 02:49:31.537 INFO [spatcher-2] a.e.s.Slf4jLogger Slf4jLogger started
 ```
+
+![alt](https://github.com/minhphuoc275/testapp/blob/master/images/success.png)
