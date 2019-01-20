@@ -22,14 +22,14 @@ Sending a GET request to localhost:8080/leaderboard should return a json array o
 
 Some evidences:
 
-'vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose ps
+`vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose ps
    Name                  Command               State           Ports         
 -----------------------------------------------------------------------------
 redis.local   docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp
 testapp       bash -c java -cp ./testapp ...   Up      0.0.0.0:8080->8080/tcp
-vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ '
+vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$`
 
-'vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose -f Docker-compose.yml up
+`vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose -f Docker-compose.yml up
 Starting redis.local ... done
 Starting testapp     ... done
 Attaching to redis.local, testapp
@@ -50,4 +50,4 @@ testapp        | 02:54:14 [Main-akka.actor.default-dispatcher-5] INFO  akka.even
 testapp        | 02:59:20 [Main-akka.actor.default-dispatcher-11] TRACE kixeye.testapp.routes.Leaderboard - HTTP request for leaderboard
 testapp        | 02:59:20 [leaderboard-akka.actor.default-dispatcher-9] DEBUG kixeye.testapp.RequestHandler - getting leaderboard from redis
 testapp        | 02:59:20 [scala-execution-context-global-47] DEBUG kixeye.testapp.RequestHandler - got leaderboard: List(LeaderboardEntry(3,-950776544), LeaderboardEntry(1,645407318))
-testapp        | 02:59:20 [Main-akka.actor.default-dispatcher-11] DEBUG kixeye.testapp.routes.Leaderboard - Got status response List(LeaderboardEntry(3,-950776544), LeaderboardEntry(1,645407318)) for HTTP leaderboard request'
+testapp        | 02:59:20 [Main-akka.actor.default-dispatcher-11] DEBUG kixeye.testapp.routes.Leaderboard - Got status response List(LeaderboardEntry(3,-950776544), LeaderboardEntry(1,645407318)) for HTTP leaderboard request`
