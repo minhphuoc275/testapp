@@ -1,0 +1,19 @@
+version: "3"
+services:
+  redis.local:
+    container_name: redis.local
+    image: redis
+    ports:
+    - "6379:6379"
+    restart: always
+  java:
+    container_name: testapp
+    image: openjdk:8
+    depends_on:
+    - redis.local
+    volumes:
+    - /testapp/testapp-master/testapp:/testapp
+    working_dir: /testapp
+    command: bash -c "java -cp ./testapp.jar kixeye.testapp.Main"  
+    ports:
+    - "8080:8080"
