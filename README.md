@@ -7,7 +7,7 @@ Sending a GET request to localhost:8080/leaderboard should return a json array o
 ## Dependencies
 
 ### Java Runtime Environment: version 1.8.0_121
-### Redis server available at: redis.local:6379 (a working redis.conf file is included in ./resources)
+### Redis server: redis.local:6379
 ### Logging: local file system at /var/log/testapp.log
 
 #######################################
