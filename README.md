@@ -22,9 +22,9 @@ Sending a GET request to localhost:8080/leaderboard should return a json array o
 
 Some evidences:
 
-``vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose ps
+```vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$ sudo docker-compose ps
    Name                  Command               State           Ports         
 -----------------------------------------------------------------------------
 redis.local   docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp
 testapp       bash -c java -cp ./testapp ...   Up      0.0.0.0:8080->8080/tcp
-vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$``
+vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$```
