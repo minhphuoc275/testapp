@@ -1,23 +1,14 @@
 # KIXEYE Test Application - Phuoc Tran
 
-'[
-    {
-        "userId": 4,
-        "score": 1256336489
-    },
-    {
-        "userId": 3,
-        "score": 462027042
-    }
-]'
+'[{"userId":3,"score":-950776544},{"userId":1,"score":645407318}]'
 
 Sending a GET request to localhost:8080/leaderboard should return a json array of users ids and scores like:
 
 ## Dependencies
 
-Java Runtime Environment: version 1.8.0_121
-Redis server available at: redis.local:6379 (a working redis.conf file is included in ./resources)
-Logging: local file system at /var/log/testapp.log
+### Java Runtime Environment: version 1.8.0_121
+### Redis server available at: redis.local:6379 (a working redis.conf file is included in ./resources)
+### Logging: local file system at /var/log/testapp.log
 
 #######################################
 
