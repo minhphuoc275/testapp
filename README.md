@@ -27,9 +27,9 @@ Some evidences:
 -----------------------------------------------------------------------------
 redis.local   docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp
 testapp       bash -c java -cp ./testapp ...   Up      0.0.0.0:8080->8080/tcp
-vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$```
+vagrant@ubuntu-xenial:/testapp/testapp-master/testapp$
 
-```vagrant@ubuntu-xenial:/tmp$ tail -f testapp.log 
+vagrant@ubuntu-xenial:/tmp$ tail -f testapp.log 
 02:49:30.957 INFO [spatcher-2] a.e.s.Slf4jLogger Slf4jLogger started
 02:49:31.079 INFO [main] k.t.Redis$ generated scores: List((-9.55111879E8,1), (-1.292787996E9,2), (-6.61508751E8,3), (2.049288803E9,4))
 02:49:31.257 INFO [spatcher-3] k.t.Main$ Loaded data into Redis
