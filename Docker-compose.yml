@@ -12,7 +12,7 @@ services:
     depends_on:
     - redis.local
     volumes:
-    - /testapp/testapp-master/testapp:/testapp
+    - .:/testapp
     - /tmp:/var/log
     working_dir: /testapp
     command: bash -c "java -cp ./testapp.jar kixeye.testapp.Main"  
